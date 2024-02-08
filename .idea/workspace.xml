@@ -7,13 +7,18 @@
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dc48916-cf94-4f91-9b68-2cbf9d176c42" name="Default Changelist" comment="add view">
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/user_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crime_backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/crime_backend/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1707388230488</updated>
       <workItem from="1707388233393" duration="10246000" />
-      <workItem from="1707405892202" duration="579000" />
+      <workItem from="1707405892202" duration="1154000" />
     </task>
     <task id="LOCAL-00001" summary="add view">
       <created>1707405555384</created>
@@ -89,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707405555384</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="change file name to user_views.py">
+      <created>1707406559180</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707406559180</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,7 +112,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -112,7 +136,8 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="add view" />
-    <option name="LAST_COMMIT_MESSAGE" value="add view" />
+    <MESSAGE value="change file name to user_views.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="change file name to user_views.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="126" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1707401314339">
@@ -155,10 +180,11 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="229" y="98" key="SettingsEditor/0.25.1440.875/-255.-1055.1920.981@0.25.1440.875" timestamp="1707406265057" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1707405571159">
-      <screen x="0" y="25" width="1440" height="875" />
+    <state x="320" y="189" key="Vcs.Push.Dialog.v2" timestamp="1707406612949">
+      <screen x="0" y="25" width="1440" height="817" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.25.1440.875/-255.-1055.1920.981@0.25.1440.875" timestamp="1707405571159" />
+    <state x="320" y="189" key="Vcs.Push.Dialog.v2/0.25.1440.817/-255.-1055.1920.1055@0.25.1440.817" timestamp="1707406612949" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.25.1440.875/-255.-1055.1920.981@0.25.1440.875" timestamp="1707406570817" />
     <state x="519" y="202" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1707405254984">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
