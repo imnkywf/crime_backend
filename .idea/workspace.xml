@@ -10,7 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dc48916-cf94-4f91-9b68-2cbf9d176c42" name="Default Changelist" comment="add view" />
+    <list default="true" id="8dc48916-cf94-4f91-9b68-2cbf9d176c42" name="Default Changelist" comment="add view">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/user_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crime_backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/crime_backend/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1707388230488</updated>
       <workItem from="1707388233393" duration="10246000" />
-      <workItem from="1707405892202" duration="315000" />
+      <workItem from="1707405892202" duration="579000" />
     </task>
     <task id="LOCAL-00001" summary="add view">
       <created>1707405555384</created>
@@ -115,10 +119,14 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="320" y="126" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.875/-255.-1055.1920.982@0.25.1440.875" timestamp="1707401314339" />
-    <state x="586" y="368" width="268" height="261" key="Github.ShareDialog" timestamp="1707406195374">
+    <state x="586" y="368" width="268" height="261" key="Github.ShareDialog" timestamp="1707406468076">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="586" y="368" width="268" height="261" key="Github.ShareDialog/0.25.1440.875/-255.-1055.1920.981@0.25.1440.875" timestamp="1707406195374" />
+    <state x="586" y="368" width="268" height="261" key="Github.ShareDialog/0.25.1440.875/-255.-1055.1920.981@0.25.1440.875" timestamp="1707406468076" />
+    <state x="506" y="173" key="Github.UntrackedFilesDialog" timestamp="1707406304391">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="506" y="173" key="Github.UntrackedFilesDialog/0.25.1440.875/-255.-1055.1920.981@0.25.1440.875" timestamp="1707406304391" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1707405608276">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
