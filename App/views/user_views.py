@@ -5,8 +5,9 @@ from django.views import View
 from django.core.exceptions import ObjectDoesNotExist
 
 # 引入模型
-from App.models import UserProfile
+from App.models import UserCredentials, UserProfile
 from App.utils import generate_token
+
 
 # 用户登录
 class LoginView(View):
@@ -20,7 +21,7 @@ class LoginView(View):
             return JsonResponse({'message': '登录失败，缺少用户名或密码'})
 
         try:
-            user_profile = UserProfile.objects.get(username=username, password=password)
+            check_user_credentials = UserCredentials.objects.get(username=username, password=password)
             # 如果找到了匹配的用户，则继续处理登录逻辑
 
             token = generate_token.generate_token(username)
@@ -46,15 +47,21 @@ class RegisterView(View):
         password = json_data.get('password')  # 获取密码
 
         # 检查用户名是否已被注册
-        if UserProfile.objects.filter(username=username).exists():
+        if UserCredentials.objects.filter(username=username).exists():
             return JsonResponse({'message': '用户名已被注册'})
 
         # 生成token
         generate_token.generate_token(username)
 
-        sql = UserProfile(username=username, password=password, gender='male', age=0, email='', address='',
-                          created_at=time.time())
-        sql.save()
+        # 账号密码加进数据库
+        add_user_credentials = UserCredentials(username=username, password=password)
+
+        # 添加账号个人信息
+        add_user_profile = UserProfile(username=username, gender='male', age=0, email='', address='', preferred_address='',
+                          create_time=time.time())
+
+        add_user_credentials.save()
+        add_user_profile.save()
         response_data = {
             'username': username,
             'password': password,
