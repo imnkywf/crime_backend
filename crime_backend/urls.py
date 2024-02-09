@@ -16,11 +16,14 @@ Including another URLconf
 from App.models import *
 from django.contrib import admin
 from django.urls import path
-from App.user_views import *
+from App.views.user_views import *
+from App.views.profile_views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', LoginView.as_view()),
     path('register/', RegisterView.as_view()),
+    path('profile/', User_Profile.as_view()),
+    path('update-profile/', Update_Profile.as_view()),
 ]
 

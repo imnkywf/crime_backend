@@ -57,8 +57,9 @@ class RegisterView(View):
         add_user_credentials = UserCredentials(username=username, password=password)
 
         # 添加账号个人信息
-        add_user_profile = UserProfile(username=username, gender='male', age=0, email='', address='', preferred_address='',
-                          create_time=time.time())
+        add_user_profile = UserProfile(username=username, gender='male', age=0, email='', address='',
+                                       preferred_address='',
+                                       create_time=time.time())
 
         add_user_credentials.save()
         add_user_profile.save()
