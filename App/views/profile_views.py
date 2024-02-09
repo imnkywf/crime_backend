@@ -40,6 +40,7 @@ class Update_Profile(View):
 
             user_profile = UserProfile.objects.get(username=username)
 
+
             user_profile.age = age
             user_profile.email = email
             user_profile.address = address
