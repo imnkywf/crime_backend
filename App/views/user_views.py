@@ -7,6 +7,7 @@ from django.core.exceptions import ObjectDoesNotExist
 # 引入模型
 from App.models import UserCredentials, UserProfile
 from App.utils import generate_token
+from App.models import UserAvatar
 
 
 # 用户登录
@@ -16,14 +17,18 @@ class LoginView(View):
         username = request.GET.get('username')  # 获取用户名
         password = request.GET.get('password')  # 获取密码
 
+        print(username)
+        print(password)
+
         # 检查是否有收到用户名和密码
         if not username or not password:
             return JsonResponse({'message': '登录失败，缺少用户名或密码'})
 
         try:
             check_user_credentials = UserCredentials.objects.get(username=username, password=password)
-            # 如果找到了匹配的用户，则继续处理登录逻辑
+            check_user_credentials.save()
 
+            # 如果找到了匹配的用户，则继续处理登录逻辑
             token = generate_token.generate_token(username)
 
             # 返回数据
@@ -61,7 +66,11 @@ class RegisterView(View):
                                        preferred_address='',
                                        create_time=time.time())
 
+        # 添加头像
+        add_user_avatar = UserAvatar(username=username, avatar_file_name='default.png')
+
         add_user_credentials.save()
+        add_user_avatar.save()
         add_user_profile.save()
         response_data = {
             'username': username,

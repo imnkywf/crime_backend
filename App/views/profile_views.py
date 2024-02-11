@@ -40,7 +40,6 @@ class Update_Profile(View):
 
             user_profile = UserProfile.objects.get(username=username)
 
-
             user_profile.age = age
             user_profile.email = email
             user_profile.address = address
@@ -48,6 +47,7 @@ class Update_Profile(View):
             user_profile.gender = gender
 
             user_profile.save()
+
 
             return JsonResponse({"message": "信息修改成功", "data": {}})
 

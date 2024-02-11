@@ -16,8 +16,12 @@ Including another URLconf
 from App.models import *
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls.static import static
+from django.conf import settings
 from App.views.user_views import *
 from App.views.profile_views import *
+from App.views.avatar_views import *
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,5 +29,10 @@ urlpatterns = [
     path('register/', RegisterView.as_view()),
     path('profile/', User_Profile.as_view()),
     path('update-profile/', Update_Profile.as_view()),
+    path('avatar/', Avatar.as_view()),
+    path('upload-avatar/', Upload_Avatar.as_view()),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.AVATAR_URL, document_root=settings.MEDIA_ROOT)
 

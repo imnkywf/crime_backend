@@ -23,3 +23,10 @@ class UserProfile(models.Model):
     preferred_address = models.CharField(max_length=100, null=True)
     gender = models.CharField(max_length=100, default='male')
     create_time = models.DateTimeField(auto_now_add=True)
+
+
+# 存放头像信息
+class UserAvatar(models.Model):
+    username = models.CharField(max_length=100, unique=True)
+    avatar_file_name = models.CharField(max_length=100)
+
